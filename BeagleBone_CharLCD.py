@@ -9,7 +9,7 @@ import Adafruit_BBIO.GPIO as GPIO
 
 from time import sleep
 
-class Adafruit_CharLCD:
+class BeagleBone_CharLCD:
 
     # commands
     LCD_CLEARDISPLAY                 = 0x01
@@ -56,7 +56,7 @@ class Adafruit_CharLCD:
 
 
     def __init__(self, pin_rs="P9_11", pin_e="P9_13",
-                  pins_db=["P9_12", "P9_14", "P9_16", "P9_18"], GPIO = None):
+                  pins_db=["P9_12", "P9_14", "P9_16", "P9_18"]):
         self.GPIO = GPIO
         self.pin_rs = pin_rs
         self.pin_e = pin_e
